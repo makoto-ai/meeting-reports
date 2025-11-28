@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Reports | 議事録・グラフィックレコーディング</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .report-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .report-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .report-date {
+            font-size: 14px;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .report-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .report-meta {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .view-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .view-button:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .tech-badge {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            .reports-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Meeting Reports</h1>
+            <p class="subtitle">AI-Powered Graphic Recording | McKinsey/BCG Quality Standard</p>
+        </header>
+        
+        <div class="reports-grid">
+            <div class="report-card" onclick="location.href='2025-11-28-kiyo-youtube-team-meeting/'">
+                <div class="report-date">📅 2025-11-28</div>
+                <div class="report-title">キヨさん YouTube チームミーティング</div>
+                <div class="report-meta">
+                    <div class="meta-item">📄 10-15 Pages</div>
+                    <div class="meta-item">🎨 Graphic Recording</div>
+                </div>
+                <a href="2025-11-28-kiyo-youtube-team-meeting/" class="view-button">View Report →</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Powered by AI Paper-Based Prompt Generation System</p>
+            <div class="tech-stack">
+                <div class="tech-badge">Chain-of-Thought</div>
+                <div class="tech-badge">Few-shot Learning</div>
+                <div class="tech-badge">Visual Hierarchy</div>
+                <div class="tech-badge">Dual Coding</div>
+                <div class="tech-badge">Cognitive Load Theory</div>
+                <div class="tech-badge">Gestalt Principles</div>
+                <div class="tech-badge">Color Psychology</div>
+            </div>
+            <p style="margin-top: 20px; opacity: 0.8;">© 2025 AI Systems Workspace</p>
+        </footer>
+    </div>
+</body>
+</html>
